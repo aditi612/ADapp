@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF91B3A9"
+    tools:context="com.example.adapp.MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="241dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="85dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/textfilebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/rounded_corner"
+        android:text="TRANSLATE TEXT FILE"
+        android:textColor="#EAE9D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textbutton" />
+
+    <Button
+        android:id="@+id/jsonhttpbutton"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/rounded_corner"
+        android:text="PARSE JSON URL"
+        android:textColor="#EFE3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jsonbutton" />
+
+    <Button
+        android:id="@+id/jsonbutton"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/rounded_corner"
+        android:text="PARSE JSON FILE"
+        android:textColor="#EFE3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textfilebutton" />
+
+    <Button
+        android:id="@+id/textbutton"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/rounded_corner"
+        android:text="TRANSLATE ANY TEXT"
+        android:textColor="#EFE3E3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="362dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="17dp"
+        android:text="Translate text of your choice,Display a file's content,Display Json File, Display Json URL file"
+        android:textColor="#434141"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <Button
+        android:id="@+id/retrofitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/rounded_corner"
+        android:text="TEST RETROFIT-POST "
+        android:textColor="#EAE9D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textbutton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
